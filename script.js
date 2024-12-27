@@ -24,5 +24,13 @@ addbtn.addEventListener("click", (e) => {
     // Create new li elements
     const li = document.createElement("li");
     li.className = 'flex justify-between items-center p-3 bg-gray-100 rounded';
+
+//    creat span for showing input text
+    const span = document.createElement("span");
+    span.textContent = Text;
+    span.className = "flex-1";
+
+
+    ullist.appendChild(span)
     ullist.appendChild(li)
 })

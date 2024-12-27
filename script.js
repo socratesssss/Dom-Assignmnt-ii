@@ -18,4 +18,11 @@ addbtn.addEventListener("click", (e) => {
         alert("Add your task");
         return;
     }
+
+    p1.classList.remove("hidden");
+
+    // Create new li elements
+    const li = document.createElement("li");
+    li.className = 'flex justify-between items-center p-3 bg-gray-100 rounded';
+    ullist.appendChild(li)
 })

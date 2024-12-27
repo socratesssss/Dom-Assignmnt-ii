@@ -33,8 +33,14 @@ addbtn.addEventListener("click", (e) => {
     const btnlist = document.createElement("div");
     btnlist.className = "flex";
 
-   
+    // Creating a checkbox type button
+    const liradio = document.createElement("span");
+    liradio.innerHTML = `
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 mx-2 stroke-2 active:stroke-green-500">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+            </svg>`;
 
+   btnlist.appendChild(liradio)
     ullist.appendChild(btnlist);
     ullist.appendChild(span)
     ullist.appendChild(li)

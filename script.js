@@ -80,5 +80,13 @@ addbtn.addEventListener("click", (e) => {
     });
 
 
+     // Add event listener for the delete button
+     dltbtn.addEventListener("click", () => {
+        if (span.classList.contains("line-through")) {
+            completedCount--; 
+        }
+        ullist.removeChild(li);
+        updateCounter(); 
+    });
 
 })

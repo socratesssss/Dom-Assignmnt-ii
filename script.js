@@ -29,8 +29,13 @@ addbtn.addEventListener("click", (e) => {
     const span = document.createElement("span");
     span.textContent = Text;
     span.className = "flex-1";
+//  making div for li tools
+    const btnlist = document.createElement("div");
+    btnlist.className = "flex";
 
+   
 
+    ullist.appendChild(btnlist);
     ullist.appendChild(span)
     ullist.appendChild(li)
 })
